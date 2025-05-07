@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 public class ArrowUIManager : MonoBehaviour
 {
-    [SerializeField] GameObject arrowIconPrefab;  // พรีแฟบของไอคอนลูกธนู (ต้องเป็น UI Image)
-    [SerializeField] Transform arrowIconPanel;    // Panel ที่ใช้วางไอคอนลูกธนู
-    [SerializeField] int totalArrows = 3;         // จำนวนลูกธนูทั้งหมดตอนเริ่ม
+    [SerializeField] GameObject arrowIconPrefab;  
+    [SerializeField] Transform arrowIconPanel;    
+    [SerializeField] int totalArrows = 3;         
 
     public List<GameObject> currentIcons = new List<GameObject>();
 

@@ -179,3 +179,4 @@ MonoBehaviour:
   arrowSpeed: 10
   rb: {fileID: 6499547257373674598}
   gravityScale: 1
+  scoreManager: {fileID: 0}

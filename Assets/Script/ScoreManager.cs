@@ -1,26 +1,30 @@
 using UnityEngine;
-using TMPro;  // ใช้ TextMeshPro
+using TMPro;  
 
 public class ScoreManager : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI scoreText;  // ใช้เพื่อแสดงคะแนนใน UI (TextMeshPro)
-    private int score = 0;  // คะแนนเริ่มต้น
+    [SerializeField] TextMeshProUGUI scoreText;  
+    private int score = 0;  
 
     void Start()
     {
-        UpdateScoreText();  // เริ่มต้นการแสดงคะแนน
+        UpdateScoreText();  
     }
 
-    // ฟังก์ชันสำหรับเพิ่มคะแนน
+    
     public void AddScore(int points)
     {
-        score += points;  // เพิ่มคะแนน
-        UpdateScoreText();  // อัพเดต UI
+        score += points;  
+        UpdateScoreText();  
     }
 
-    // อัพเดตข้อความที่แสดงคะแนน
+    public int GetScore()
+    {
+        return score;
+    }
+
     private void UpdateScoreText()
     {
-        scoreText.text = "Score: " + score;  // อัพเดตข้อความ
+        scoreText.text = "Score: " + score;  
     }
 }
